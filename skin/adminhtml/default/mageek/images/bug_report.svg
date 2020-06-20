@@ -1,0 +1,11 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="4,7 4,10 12,14 20,10 20,7 "/>
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="20,22 20,20 12,12 4,20 4,22 "/>
+	<polyline display="none" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" points="20,14 18,14 12,9 6,14 4,14 "/>
+	<polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="20,17 20,14 12,12 4,14 4,17 "/>
+	<path fill="#39B54A" d="M17,15c0,4.418-0.581,8-5,8c-4.418,0-5-3.582-5-8c0-4.418,0.582-8,5-8C16.419,7,17,10.582,17,15z"/>
+	<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M7,2 c2.209,0,4,1.791,4,4"/>
+	<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17,2 c-2.209,0-4,1.791-4,4"/>
+	<path fill="#006837" d="M15,7.871c0,0-0.791,3.129-3,3.129S9,7.872,9,7.872S9.791,5,12,5S15,7.871,15,7.871z"/>
+	<path fill="#006837" d="M11,22.931C11.328,22.972,11.661,23,12,23s0.672-0.028,1-0.069V8.955h-2V22.931z"/>
+</svg>
