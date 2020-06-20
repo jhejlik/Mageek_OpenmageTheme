@@ -3,7 +3,7 @@
 <!--
 /**
  * @category    Mageek
- * @package     Mageek_AdminTheme
+ * @package     Mageek_OpenmageTheme
  * @author      Jindra Hejlík <jindra@hejlik.cz>
  * @copyright   Copyright (c) Mageek (http://mageek.cz/)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
@@ -12,38 +12,38 @@
 
 <config>
   <modules>
-    <Mageek_AdminTheme>
+    <Mageek_OpenmageTheme>
       <version>1.0.0</version>
-    </Mageek_AdminTheme>
+    </Mageek_OpenmageTheme>
   </modules>
   <global>
     <models>
-      <mageek_admintheme>
-        <class>Mageek_AdminTheme_Model</class>
-      </mageek_admintheme>
+      <mageek_openmagetheme>
+        <class>Mageek_OpenmageTheme_Model</class>
+      </mageek_openmagetheme>
     </models>
     <helpers>
-      <mageek_admintheme>
-        <class>Mageek_AdminTheme_Helper</class>
-      </mageek_admintheme>
+      <mageek_openmagetheme>
+        <class>Mageek_OpenmageTheme_Helper</class>
+      </mageek_openmagetheme>
     </helpers>
     <events>
       <adminhtml_controller_action_predispatch_start>
         <observers>
-          <mageek_admintheme_selectedTheme>
+          <mageek_openmagetheme_selectedTheme>
             <type>singleton</type>
-            <class>mageek_admintheme/observer</class>
+            <class>mageek_openmagetheme/observer</class>
             <method>selectedTheme</method>
-          </mageek_admintheme_selectedTheme>
+          </mageek_openmagetheme_selectedTheme>
         </observers>
       </adminhtml_controller_action_predispatch_start>
     </events>
   </global>
   <default>
     <admin>
-      <mageek_admintheme>
+      <mageek_openmagetheme>
         <theme_name>mageek</theme_name>
-      </mageek_admintheme>
+      </mageek_openmagetheme>
     </admin>
   </default>
 </config>
