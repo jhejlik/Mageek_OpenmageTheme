@@ -71,6 +71,19 @@
             <script type="text/javascript">
                  var loginForm = new varienForm('loginForm');
             </script>
+            <script type="text/javascript">
+                window.addEventListener("load", function() {
+                    var arr = document.querySelectorAll("script[type='text/background']");
+                    for (var x = 0; x < arr.length; x++) {
+                        var cln = arr[x].cloneNode(true);
+                        cln.type = "text/javascript";
+                        document.querySelectorAll("body")[0].appendChild(cln);
+                    }
+                });
+            </script>
+            <script type="text/background">
+                document.body.style.backgroundImage = "url('https://picsum.photos/1920/1080?random&blur')";
+            </script>
         </div>
     </div>
 </body>
