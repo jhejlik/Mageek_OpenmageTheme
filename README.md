@@ -1,5 +1,14 @@
 # Mageek_OpenmageTheme
-Admin Theme for Openmage (Magento LTS) overrides the default Magento admin theme. You can switch back to the default theme on the **System->Configuration->Admin** page.
+Admin Theme for Openmage (Magento LTS) overrides the default Magento admin theme. The minimalist header with menu provides more space for data. Colouring based on the default template does not shock current Magento users. Compatible with all pages and third party extensions. Random [images from Unsplash](https://unsplash.com) on login page are lazy loaded. You can switch back to the default theme on the **System->Configuration->Admin** page.
+
+**What comes next**:
+- Replace old gif icons with svg.
+- Responsive layout.
+- Maintain maximum compatibility with current extensions.
+- Maybe dark mode
+
+## Screenshots
+
 ### Login Page
 ![01-login-page](https://user-images.githubusercontent.com/1067045/85208154-5f7b3900-b32e-11ea-8c22-eba3eb74f447.jpg)
 ### Popup Message
