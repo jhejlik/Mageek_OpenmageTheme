@@ -7,7 +7,7 @@ Admin Theme for Openmage (Magento LTS) overrides the default Magento admin theme
 ### Dashboard page
 ![03-dashboard](https://user-images.githubusercontent.com/1067045/85208198-c862b100-b32e-11ea-8272-63828e6156df.jpg)
 ### Main menu
-![04-mainmenu](https://user-images.githubusercontent.com/1067045/85208225-f1834180-b32e-11ea-923d-30213f5754df.jpg)
+![04-mainmenu](https://user-images.githubusercontent.com/1067045/85211501-4c766200-b34a-11ea-98c6-fc717dddddda.jpg)
 ### Invoices
 ![05-invoices](https://user-images.githubusercontent.com/1067045/85208227-f3e59b80-b32e-11ea-8fc7-08d18b5b093f.jpg)
 ### Manage Products
