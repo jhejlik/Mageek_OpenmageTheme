@@ -1,7 +1,15 @@
+/**
+ * @category    design
+ * @package     design_mageek
+ * @author      Jindra Hejlík <jindra@hejlik.cz>
+ * @copyright   Copyright (c) Mageek (http://hejlik.cz/)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /*
-#ecf4f9  #d0e4f0  #a6c6d9  #7592a3  #475e6b  #3d515c
-#f16221  #f7f8f9  #eaebee  #faebe7  #fff9e9  #eff5ea
+    #ecf4f9     #d0e4f0     #a6c6d9     #7592a3     #475e6b     #3d515c
+    #f16221     #f7f8f9     #eaebee     #faebe7     #fff9e9     #eff5ea
 */
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -12,7 +20,8 @@
  .message-popup .message-popup-head h2,
  .message-popup .message-popup-head a,
  input.input-text,
- textarea,select,
+ textarea,
+ select,
  button,
 .form-button,
 .grid-severity-critical,
@@ -780,6 +789,7 @@ textarea:disabled,
 select:disabled {
 	outline: none;
 	opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
 select option:disabled,
@@ -817,6 +827,7 @@ select:disabled option {
 	border-bottom: 1px solid #bdbdbd;
 	background: #fff9e9;
 	opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	top: 40px;
 }
 
@@ -1134,6 +1145,7 @@ div.autocomplete ul li {
 	height: 640px;
 	content: '';
 	opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	background-image: url("images/preloader_big.svg");
 }
 
