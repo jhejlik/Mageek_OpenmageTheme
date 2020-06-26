@@ -1,15 +1,15 @@
 /**
- * @category    design
- * @package     design_mageek
- * @author      Jindra Hejlík <jindra@hejlik.cz>
- * @copyright   Copyright (c) Mageek (http://hejlik.cz/)
- * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @category	design
+ * @package		design_mageek
+ * @author		Jindra Hejlík <jindra@hejlik.cz>
+ * @copyright	Copyright (c) Mageek (http://hejlik.cz/)
+ * @license		http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /*
-    #ecf4f9     #d0e4f0     #a6c6d9     #7592a3     #475e6b     #3d515c
-    #f16221     #f7f8f9     #eaebee     #faebe7     #fff9e9     #eff5ea
+	#ecf4f9	 #d0e4f0	 #a6c6d9	 #7592a3	 #475e6b	 #3d515c
+	#f16221	 #f7f8f9	 #eaebee	 #faebe7	 #fff9e9	 #eff5ea
 */
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Extension hacks %%%%%%%%%%%%%%%%%%%%%%% */
@@ -146,4 +146,89 @@ div.ampgrid-side-col {
 .adminhtml-feedexport-feed-index .state-message {
 	background: transparent !important;
 	border: none !important;
+}
+
+/* Mirasvit Fast Asynchronous Reindex */
+
+.asyncindex .log-container {
+	text-align: right !important;
+}
+
+.asyncindex .log-container #detailed_log .indicator {
+	font-size: 20px !important;
+	top: 9px !important;
+	right: 5px !important;
+	letter-spacing: 15px;
+}
+
+.asyncindex .log-container #is_developer {
+	position: initial !important;
+	margin-left: 1em !important;
+}
+
+.asyncindex .log-container #detailed_log {
+	margin-top: 20px !important;
+	border-color: #bbb !important;
+	border-width: 0 1px 1px 0 !important;
+	text-align: left !important;
+	height: 30px !important;
+}
+
+.asyncindex .log-container #detailed_log .status {
+	padding: 5px 15px !important;
+}
+
+.asyncindex .log-container #detailed_log.visible-true {
+	height: 400px  !important;
+	padding: 45px 1px !important;
+}
+
+.asyncindex .log-container #detailed_log .grid {
+  margin-top: 30px !important;
+}
+
+.asyncindex .log-container #detailed_log.visible-true .grid {
+  margin-top: -17px !important;
+}
+
+.asyncindex .log-container #detailed_log tr td {
+  padding: 5px 10px !important;
+}
+
+/* Mirasvit Advanced Reports */
+
+.form-buttons .advd-dashboard-switcher {
+	display: inline !important;
+	margin-left: 20px !important;
+}
+
+.gridster {
+	padding: 15px 10px !important;
+	margin-top: 20px !important;
+}
+
+.gridster .gridster-lock {
+	top: -3px !important;
+}
+
+.advr-report-block-container .advr-widget-toolbar .datecontrol .primary .interval {
+	width: 250px !important;
+}
+
+.advr-report-block-container .advr-widget-toolbar .custom.custom-sales_source .mstcore-help-button {
+	margin-left: 190px !important;
+	margin-top: -24px !important;
+}
+
+.advr-report-block-container #chart_div svg,
+.advr-report-block-container #chart_div > div > div {
+	max-width: 100% !important;
+}
+
+.advr-report-block-container #chart_div svg {
+	width: 100% !important;
+}
+
+.advr-report-block-container .grid table td.nobr  {
+	min-width: 130px !important;
 }
