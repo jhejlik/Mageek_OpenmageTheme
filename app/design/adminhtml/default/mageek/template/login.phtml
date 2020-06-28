@@ -28,6 +28,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
     <title><?php echo Mage::helper('adminhtml')->__('Log into Magento Admin Page') ?></title>
     <link type="text/css" rel="stylesheet" href="<?php echo $this->getSkinUrl('reset.css') ?>" media="all" />
     <link type="text/css" rel="stylesheet" href="<?php echo $this->getSkinUrl('boxes.css') ?>" media="all" />
@@ -71,6 +72,7 @@
             <script type="text/javascript">
                  var loginForm = new varienForm('loginForm');
             </script>
+            <?php echo (Mage::getStoreConfigFlag('admin/mageek_openmagetheme/mageektheme_bglogin')) ?>
             <script type="text/javascript">
                 window.addEventListener("load", function() {
                     var arr = document.querySelectorAll("script[type='text/background']");
@@ -82,10 +84,9 @@
                 });
             </script>
             <script type="text/background">
-                document.body.style.backgroundImage = "url('https://picsum.photos/1920/1080?random&blur')";
+                document.body.style.backgroundImage = "url('https://picsum.photos/1920/1080?random')";
             </script>
         </div>
     </div>
 </body>
 </html>
-

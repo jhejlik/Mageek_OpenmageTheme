@@ -1,8 +1,6 @@
 # Mageek_OpenmageTheme
 Admin Theme for Openmage (Magento LTS) overrides the default Magento admin theme. The minimalist header with menu provides more space for data. Colouring based on the default template does not shock current Magento users. Compatible with all pages and third party extensions. Random [images from Unsplash](https://unsplash.com) on login page are lazy loaded. You can switch back to the default theme on the **System->Configuration->Admin** page.
 
-Admin theme switcher based on [Inchoo AdminTheme](https://github.com/ajzele/Inchoo_AdminTheme).
-
 ### What comes next:
 - Replace all old gif icons with svg.
 - Responsive layout.
@@ -13,7 +11,17 @@ Admin theme switcher based on [Inchoo AdminTheme](https://github.com/ajzele/Inch
 This theme contains CSS variables that are compatible with [all modern browsers](https://caniuse.com/#feat=css-variables).
 **The theme is not compatible with Internet Explorer**.
 
-### Screenshots
+### Change Log:
+
+**1.0.1 -Jun 27, 2020:**
+- Theme switch refactoring
+- Minor CSS changes
+
+**1.0.0 -Jun 20, 2020:**
+- Initial release
+- Admin theme switch inspired by [Inchoo AdminTheme](https://github.com/ajzele/Inchoo_AdminTheme).
+
+### Screenshots:
 
 ##### Login Page
 ![01-login-page](https://user-images.githubusercontent.com/1067045/85208154-5f7b3900-b32e-11ea-8c22-eba3eb74f447.jpg)
