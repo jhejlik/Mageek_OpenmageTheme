@@ -137,6 +137,7 @@ div.ampgrid-side-col {
 	opacity: 0.75;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 	background-image: url("images/preloader_big.svg");
+	z-index: -1;
 }
 
 .feedexport.feed-generator-loader img {
