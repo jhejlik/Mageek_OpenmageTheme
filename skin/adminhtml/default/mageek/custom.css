@@ -48,7 +48,7 @@
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext'); */
 
  body,
  .message-popup .message-popup-head h2,
@@ -67,7 +67,9 @@
 .grid-severity-notice,
 .grid-severity-notice span,
 .popup-window .content-header,
-.magento_title {
+.magento_title,
+.calendar,
+.calendar table {
 	font-family: 'Roboto', sans-serif !important;
 }
 
@@ -1338,7 +1340,6 @@ body > a:hover {
 	color: #2f2f2f;
 	cursor: default;
 	background: var(--color-main-xs);
-	font-family: 'Roboto', sans-serif !important;
 	box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.2);
 }
 

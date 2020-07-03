@@ -21,7 +21,7 @@
  *
  * @category    design
  * @package     default_default
- * @copyright   Copyright (c) 2006-2018 Magento, Inc. (http://www.magento.com)
+ * @copyright   Copyright (c) 2006-2020 Magento, Inc. (http://www.magento.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
@@ -79,9 +79,14 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>mage/adminhtml/uploader.js</script></action>
                 <action method="addJs"><script>mage/adminhtml/product.js</script></action>
 
+                <!--  Adding link to Roboto webfont with fallback display parameter -->
+                <action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=fallback</href></action>
+
                 <action method="addCss"><name>reset.css</name></action>
                 <action method="addCss"><name>boxes.css</name></action>
                 <action method="addCss"><name>menu.css</name></action>
+
+                <!--  Adding link to Mageek_OpenmageTheme CSS files -->
                 <action method="addCss"><name>custom.css</name></action>
                 <action method="addCss"><name>custom-ext.css</name></action>
 
@@ -94,6 +99,7 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params>defer</params><if>lt IE 7</if></action>
                 <action method="addItem"><type>js</type><name>varien/iehover-fix.js</name><params/><if>lt IE 7</if></action>
 
+                <!--  Removing menu.css file -->
                 <!-- <action method="addItem"><type>skin_css</type><name>menu.css</name><params>media="screen, projection"</params></action> -->
 
                 <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/><!--<if/><condition>can_load_calendar_js</condition>--></action>
