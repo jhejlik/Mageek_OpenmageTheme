@@ -17,7 +17,7 @@ class Mageek_OpenmageTheme_Helper_Data extends Mage_Core_Helper_Data
         if (Mage::getStoreConfigFlag('admin/mageek_openmagetheme/mageektheme_enable')) {
             $theme = "mageek";
         } else {
-            $theme = "default";
+            $theme = "openmage";
         }
 
         return $theme;

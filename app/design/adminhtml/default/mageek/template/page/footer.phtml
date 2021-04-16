@@ -25,11 +25,12 @@
  */
 ?>
 <p class="bug-report">
-    <a href="<?php echo $this->getBugreportUrl() ?>" id="footer_bug_tracking" title="<?php echo $this->__('Help Us Keep OpenMage Healthy - Report All Bugs') ?>"><img src="<?php echo $this->getSkinUrl('images/bug_report.svg') ?>" /></a> &nbsp; <?php echo $this->__('Interface Locale: %s', $this->getLanguageSelect()) ?>
+    <a href="<?php echo $this->getBugreportUrl() ?>" id="footer_bug_tracking" title="<?php echo $this->__('Help Us Keep OpenMage Healthy - Report All Bugs') ?>"><img src="<?php echo $this->getSkinUrl('images/bug_report.svg') ?>" /></a>
+    <?php echo $this->__('Interface Locale: %s', $this->getLanguageSelect()) ?>
 </p>
 <p class="legality">
-    <?php echo $this->__('Magento&trade; is a trademark of Magento Inc.<br/>Copyright &copy; %s Magento Inc.', date('Y')) ?> &nbsp; <span class="mversion" title="<?php echo $this->__('based on Magento ver. %s', Mage::getVersion()) ?>"><?php echo $this->__('OpenMage ver. %s', Mage::getOpenMageVersion()) ?>
-</span>
+    <a href="<?php echo $this->getConnectWithMagentoUrl() ?>" id="footer_connect" target="_blank"><?php echo $this->__('Connect with the OpenMage Community') ?></a>
+    <span class="mversion" title="<?php echo $this->__('OpenMage ver. %s', Mage::getOpenMageVersion()) ?>"><?php echo $this->__('OpenMage ver. %s', Mage::getOpenMageVersion()) ?></span>
 </p>
 <script type="text/javascript">
     $('footer_bug_tracking').target = 'Varien_External';
