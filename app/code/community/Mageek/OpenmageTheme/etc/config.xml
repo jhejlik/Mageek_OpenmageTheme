@@ -17,6 +17,13 @@
         </Mageek_OpenmageTheme>
     </modules>
     <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <dashboard_graph>Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Graph</dashboard_graph>
+                </rewrite>
+            </adminhtml>
+        </blocks>
         <models>
             <mageek_openmagetheme>
                 <class>Mageek_OpenmageTheme_Model</class>
@@ -43,7 +50,7 @@
         <admin>
             <mageek_openmagetheme>
                 <mageektheme_enable>1</mageektheme_enable>
-                <!-- <mageektheme_bglogin>1</mageektheme_bglogin> -->
+                <mageektheme_customcss><![CDATA[.yourstyle { display: visible; }]]></mageektheme_customcss>
             </mageek_openmagetheme>
         </admin>
     </default>

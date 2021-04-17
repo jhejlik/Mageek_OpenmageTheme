@@ -994,6 +994,10 @@ select {
 	border-radius: 4px
 }
 
+select[type="time"] {
+	width: 45px !important;
+}
+
 .select-css::-ms-expand {
 	display: none;
 }
