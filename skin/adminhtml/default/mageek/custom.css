@@ -6,12 +6,6 @@
  * @license     http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
  */
 
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-/*
-	#ecf4f9	 #d0e4f0	 #a6c6d9	 #7592a3	 #475e6b	 #3d515c
-	#f16221	 #f7f8f9	 #eaebee	 #faebe7	 #fff9e9	 #eff5ea
-*/
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Extension hacks %%%%%%%%%%%%%%%%%%%%%%% */
 
 /* Amasty SMTP Email Settings */
@@ -31,19 +25,20 @@
 	margin: -3px -3px -1px;
 	width: 40px;
 	height: auto;
-	box-shadow: 0 0 0 1px #dadddf;
+	box-shadow: 0 0 0 1px var(--color-basic-500);
+	border-radius: 4px;
 	transition: 100ms;
 }
 
 .grid table#productGrid_table td img:hover {
 	transform: scale(2,2);
-	box-shadow: 0 0 0 0.5px #dadddf;
+	box-shadow: 0 0 0 .5px var(--color-basic-500), 0 2px 5px var(--color-basic-500);
 }
 
 .ampgrid_input_text {
-	width: calc(100% - 10px) !important;
-	background: none repeat scroll 0 0 #fff;
-	border: 1px solid #3D515C !important;
+	width: calc(100% - 5px) !important;
+	background: var(--color-success-100) !important;
+	border: 1px solid var(--color-success-500) !important;
 	padding: 3px 2px !important;
 	font-family: 'Roboto', sans-serif !important;
 	font-size: inherit !important;
@@ -60,8 +55,9 @@
 
 .ampgrid-group-switcher {
 	margin-bottom: 10px;
-	border: 1px solid #a6c6d9 !important;
-	background: #ecf4f9 !important;
+	border: 1px solid var(--color-warning-300) !important;
+	background: var(--color-warning-100) !important;
+	border-radius: 6px;
 	padding: 10px 18px;
 }
 
@@ -82,7 +78,7 @@ div.ampgrid-side-col {
 
 .chosen-container-single .chosen-single {
 	border-radius: 0;
-	background: #fff !important;
+	background: var(--color-success-100) !important;
 	box-shadow: none;
 }
 
@@ -91,61 +87,87 @@ div.ampgrid-side-col {
 }
 
 .chosen-container-active .chosen-single {
-	border: 1px solid #3D515C;
+	border: 1px solid var(--color-success-500);
 	box-shadow: none;
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
-	border: 1px solid #3D515C;
+	border: 1px solid var(--color-success-500);
 	box-shadow: none;
 }
 
 .chosen-container .chosen-drop {
-	border: 1px solid #3D515C;
+	border: 1px solid var(--color-success-500);
 	border-top: 0;
 	box-shadow: none;
 }
 
 .chosen-container .chosen-results li.highlighted {
-	background: #3D515C;
-	color: #fff;
+	background: var(--color-basic-700);
+	color: var(--color-success-100);
 }
 
 /* Mirasvit Advanced Product Feeds */
 
+.mstcore-help-button,
+.mstcore-help-button:hover,
+.mstcore-help-button:focus,
+.mstcore-help-button:active {
+    position: absolute;
+    margin-top: -25px !important;
+    margin-left: 270px !important;
+    padding: 0 10px !important;
+    cursor: help !important;
+}
+
 .feedexport.feed-generator-loader {
-	position: fixed !important;
-	top: 0 !important;
-	left: 0 !important;
-	width: 100% !important;
-	height: 100vh !important;
-	background: #ffffff !important;
-	opacity: 0.9 !important;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)" !important;
-	border: none !important;
-	margin-left: 0 !important;
-	padding: calc(50vh - 150px) 30px !important;
+	top: 30% !important;
+	backdrop-filter: blur(3px) !important;
+	box-shadow: 0 10px 50px -20px var(--color-basic-700) !important;
+	border-radius: 8px !important;
+	border: 1px solid var(--color-basic-100) !important;
+	color: var(--color-basic-900) !important;
+	padding: 80px 16px 32px !important;
+	background: var(--color-basic-transparent-150) url("images/preloader_big.svg") no-repeat center 20px !important;
 }
 
-.feedexport.feed-generator-loader:before {
-	position: fixed;
-	top: calc(50vh - 320px);
-	left: calc(50vw - 320px);
-	width: 640px;
-	height: 640px;
-	content: '';
-	opacity: 0.75;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-	background-image: url("images/preloader_big.svg");
-}
-
-.feedexport.feed-generator-loader img {
+.feedexport.feed-generator-loader > img,
+.feedexport.feed-generator-loader > br {
 	display: none;
 }
 
 .adminhtml-feedexport-feed-index .state-message {
 	background: transparent !important;
 	border: none !important;
+}
+
+.mfe-attribute-conditions select {
+    height: unset !important;
+}
+
+.category-mapping .mapping {
+    padding: 2px 10px !important;
+    background: var(--color-basic-100) !important;
+    border: none !important;
+    border-radius: 4px;
+}
+
+.category-mapping .mapping .map input {
+    width: 450px !important;
+    border-color: var(--color-basic-500) !important;
+    background: var(--color-basic-200) !important;
+    padding: 1px 3px 1px 3px;
+    color: #2f2f2f;
+    font-size: 12px;
+}
+
+.category-mapping .mapping .map input:hover {
+    background: var(--color-basic-100) !important;
+}
+
+.category-mapping .mapping .map input:focus {
+    border-color: var(--color-basic-700) !important;
+    background: var(--color-basic-100) !important;
 }
 
 /* Mirasvit Fast Asynchronous Reindex */

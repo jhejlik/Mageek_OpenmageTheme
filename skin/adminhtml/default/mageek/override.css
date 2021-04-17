@@ -960,7 +960,7 @@ textarea,
 select {
 	border-width: 1px;
 	border-style: solid;
-	border-color: #aaa;
+	border-color: var(--color-basic-500);
 }
 
 input.input-text, textarea {
@@ -980,7 +980,7 @@ input.input-text, textarea {
 .field-100 input.input-text {
 	width: calc(100% - 8px) !important;
 	padding: 2px 2px 3px !important;
-	border: 1px solid #aaa !important;
+	border: 1px solid var(--color-basic-500) !important;
 }
 
 select {
@@ -1049,7 +1049,7 @@ input[type="radio"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-color: var(--color-basic-100);
-	border: 1px solid #aaa;
+	border: 1px solid var(--color-basic-500);
 }
 
 input[type="radio"] {
@@ -1429,6 +1429,7 @@ div.side-col h3 {
 .grid table.border tfoot tr td {
 	background: var(--color-basic-400) !important;
 	border-color: var(--color-basic-100) transparent !important;
+	color: var(--color-basic-700) !important;
 }
 
 /* Orders */
