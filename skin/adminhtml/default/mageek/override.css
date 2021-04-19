@@ -535,6 +535,14 @@ div.autocomplete ul li div {
 	background: var(--color-basic-200);
 }
 
+.grid table tbody tr:last-child td {
+	border-bottom: 15px solid var(--color-basic-200);
+}
+
+.grid table tbody tr:last-child td.empty-text {
+    border-bottom: none;
+}
+
 .grid tr.unread {
 	background: var(--color-primary-100) !important;
 }
@@ -703,10 +711,22 @@ table.actions {
 	background: var(--color-basic-100);
 }
 
+.preview .cell-image .place-holder {
+	border: 1px solid var(--color-basic-500);
+	border-radius: 4px;
+	background-color: var(--color-basic-300);
+}
+
+.preview .cell-image img {
+	border: 1px solid var(--color-basic-500);
+	border-radius: 4px;
+}
+}
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Dashboard %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 .dashboard-container {
-	border: none;
+	border: none !important;
 }
 
 .dashboard-container > table {
@@ -1046,14 +1066,15 @@ input[type="checkbox"],
 input[type="radio"] {
 	display: inline-block;
 	position: relative;
-	margin: 2px 0;
-	height: 16px !important;
-	width: 16px !important;
+	margin: 0 5px;
+	height: 20px !important;
+	width: 20px !important;
 	overflow: hidden;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-color: var(--color-basic-100);
 	border: 1px solid var(--color-basic-500);
+	border-radius: 4px;
 }
 
 input[type="radio"] {
@@ -1065,10 +1086,11 @@ input[type="radio"]:after {
 	display: block;
 	position: absolute;
 	background-color: var(--color-primary-500);
-	width: 10px;
-	height: 10px;
-	top: 2px;
-	left: 2px;
+	width: 12px;
+	height: 12px;
+	top: 3px;
+	left: 3px;
+	border-radius: 3px;
 }
 
 input[type="checkbox"]:checked:after,
@@ -1077,11 +1099,20 @@ input[type="radio"]:checked:after {
 }
 
 input[type="radio"]:checked:after {
-	width: 8px;
-	height: 8px;
+	width: 12px;
+	height: 12px;
 	top: 3px;
 	left: 3px;
 	border-radius: 50%;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active,
+input[type="radio"]:hover,
+input[type="radio"]:focus,
+input[type="radio"]:active {
+	border-color: var(--color-basic-800);
 }
 
 input.input-text:disabled,
@@ -1322,6 +1353,17 @@ dl.accordion dt,
 	border-bottom: 1px solid var(--color-basic-400);
 }
 
+.entry-edit .entry-edit-head .tools a {
+    color: var(--color-primary-500);
+	font-size: 13px;
+	border-bottom: none;
+}
+
+.entry-edit .entry-edit-head .tools a:hover {
+    color: var(--color-basic-800);
+	text-decoration: none;
+}
+
 dl.accordion dt.open a,
 div.collapseable a.open {
 	background: url(images/ico_up.svg) 100% 50% no-repeat;
@@ -1369,6 +1411,12 @@ div.side-col h3 {
 	padding: 20px;
 }
 
+.divider {
+	height:1px;
+	margin: 16px 0;
+	background: var(--color-basic-100);
+}
+
 .form-list td.label {
 	width: 260px;
 }
@@ -1393,12 +1441,25 @@ div.side-col h3 {
 }
 
 .super-attributes li.attribute {
-	border: 1px solid var(--color-basic-500);
-	background-color: var(--color-basic-200);
+	border: no;
+	background-color: var(--color-basic-100);
+	margin: 0 0 8px;
+	padding: 16px 0;
+	border-radius: 6px;
+}
+
+.super-attributes div.attribute-name-container {
+    background-image: url("images/arrow_sort_move.svg");
+    background-position: 10px 50%;
+    padding-left: 25px;
 }
 
 .super-attributes li.attribute ul.attribute-values {
 	margin-top: 20px;
+}
+
+.super-attributes li.attribute-value {
+    margin: 5px 0;
 }
 
 .custom-options .option-box {
@@ -1481,6 +1542,20 @@ fieldset.np {
 	text-align: right;
 }
 
+.note-list li {
+    border-top: 1px solid #e3e3e3;
+    margin-top: 9px !important;
+    background-color: var(--color-basic-100);
+    padding: 10px 10px 10px 32px;
+    background-position: 10px 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.subdue {
+    color: var(--color-info-500);
+}
+
 .page-create-order .grid + table {
 	padding: 10px 6px;
 }
@@ -1520,24 +1595,19 @@ fieldset.np {
 	margin: 15px 0;
 }
 
-.data.order-tables td .item-text > * {
-	display: inline;
-	margin-right: 15px;
-}
 
-.data.order-tables td .item-text > div {
-	float: right;
-	margin: 0 0 0 15px;
-}
 
 .data.order-tables td br {
 	display: none;
 }
 
-.data.order-tables td dl.item-options dt,
-.data.order-tables td dl.item-options dd {
-	display: inline;
+.data.order-tables td dl.item-options dt {
+	float: left;
 	font-style: initial;
+	padding-right: 5px
+}
+
+.data.order-tables td dl.item-options dd {
 }
 
 .emph, .accent,
@@ -2072,13 +2142,20 @@ body > a:hover {
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Calendar %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-.calendar,
-.calendar table {
+.calendar {
 	border: none;
+	background: var(--color-basic-100);
+	box-shadow: 0 0 15px var(--color-basic-transparent-925);
+	padding: 16px 16px 8px 16px;
+	border-radius: 6px;
+}
+
+.calendar table {
 	color: #2f2f2f;
-	cursor: default;
-	background: var(--color-basic-200);
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.2);
+	background: var(--color-basic-100);
+	border-color: var(--color-basic-100) !important;
+    border-spacing: 5px;
+    border-collapse: separate;
 }
 
 .calendar table th,
@@ -2086,43 +2163,45 @@ body > a:hover {
 	vertical-align: middle !important;
 	text-align: center !important;
 	padding: 5px 3px !important;
-	font-size: 110%;
+	font-size: 13px;
+	border: none !important;
+	border-radius: 4px;
+	background-color: var(--color-basic-200);
 }
-
-.calendar table tr td:last-child {
-	border-right: 0;
-}
-
 
 .calendar .button {
+	background-color: var(--color-basic-100);
+	color: var(--color-basic-800);
+	border: 1px solid var(--color-basic-500) !important;
 	text-align: center;
-	border: 1px solid var(--color-basic-100);
-	border-color: var(--color-basic-100) var(--color-basic-700) var(--color-basic-700) var(--color-basic-100);
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.calendar thead .daynames td {
+	padding: 16px 0 0 !important;
 }
 
 .calendar thead .title {
 	font-weight: bold;
 	border: 0;
-	background: var(--color-basic-700);
+	background: var(--color-basic-600);
 	font-size: 14px;
 }
 
 .calendar thead .name {
-	border-style: solid;
-	border-width: 1px 1px 1px 0;
-	border-color: var(--color-basic-100) var(--color-basic-400) var(--color-basic-400) var(--color-basic-100);
-	background: var(--color-basic-100);
+	background: var(--color-basic-100) !important;
 }
 
 .calendar thead .weekend,
 .calendar tbody td.weekend {
-	color: var(--color-primary-500);
+	color: inherit;
+	background-color: var(--color-basic-400);
 }
 
 .calendar thead .hilite {
-	background-color: var(--color-basic-400);
-	border: 1px solid var(--color-basic-100);
-	border-color: var(--color-basic-100) var(--color-basic-700) var(--color-basic-700) var(--color-basic-100);
+	background-color: transparent;
 }
 
 .calendar thead .active {
@@ -2150,16 +2229,14 @@ body > a:hover {
 }
 
 .calendar tbody .rowhilite td {
-	background: var(--color-basic-400);
+	background: var(--color-basic-200);
 }
 
 .calendar tbody .rowhilite td.wn {
-	background: var(--color-basic-400);
-	border-right: 1px solid var(--color-basic-100);
+	background: var(--color-basic-200);
 }
 
 .calendar tbody td.hilite {
-	border: none;
 	box-shadow: 0 0 0 1px var(--color-basic-700) inset;
 }
 
@@ -2169,15 +2246,15 @@ body > a:hover {
 	color: var(--color-basic-100);
 }
 
-.calendar tbody td.selected {
-	border: none;
-	background: #ff8c00;
-	color: var(--color-basic-100);
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;
+.calendar tbody td.today {
+	font-weight: bold;
+	background: var(--color-info-300);
+	color: var(--color-basic-900);
 }
 
-.calendar tbody td.today {
-	color: var(--color-primary-500);
+.calendar tbody td.selected {
+	background: var(--color-primary-500);
+	color: var(--color-basic-100);
 }
 
 .calendar tbody .disabled {
@@ -2186,24 +2263,23 @@ body > a:hover {
 
 .calendar tfoot .ttip {
 	border: none;
-	background: var(--color-basic-700);
+	background: transparent;
+	color: var(--color-basic-700);
+	font-weight: bold;
 }
 
 .calendar tfoot .hilite {
 	border: none;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;
 	background: var(--color-basic-700);
 }
 
 .calendar tfoot .active {
 	border: none;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;
 	background: var(--color-basic-700);
 }
 
 .calendar .combo {
 	border: none;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;
 	background: var(--color-basic-500);
 	font-size: 12px;
 }
