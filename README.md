@@ -1,4 +1,4 @@
-# Mageek_OpenmageTheme
+# Mageek_OpenmageTheme v.2 Alpha
 Admin Theme for Openmage (Magento LTS) overrides the default Magento admin theme. The minimalist header with menu provides more space for data. Colouring based on the Openmage brand identity. Compatible with all pages and third party extensions. Now you can edit CSS style from admin page. You can switch back to the default theme on the **System->Configuration->Admin** page.
 
 ### Browsers compatibility:

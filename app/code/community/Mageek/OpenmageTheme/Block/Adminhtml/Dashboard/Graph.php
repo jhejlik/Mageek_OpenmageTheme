@@ -34,15 +34,20 @@ class Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Graph extends Mage_Adminhtm
      */
     public function getChartUrl($directUrl = true)
     {
-    	// Set the bar chart options
+        /**
+         * set the bar chart options
+         */
         $params = array(
+            // chart type (vertical bar chart)
             'cht'  => 'bvs',
-            'chf'  => 'bg,s,F5F7F9|b0,lg,90,FF006A,1,9F089B,0.4',
-            'chm'  => 'o,DF0482,0,-1,6.0|B,FCECF4,0,0,0',
-            'chco' => 'DF0482',
-            'chxs' => '0,0,11|1,0,11',
-            'chma' => '20,20,50,10',
-            'chls' => '2'
+            // rounded bars (4px)
+            'chbr' => '4',
+            // chart fill (background,solid,#F5F7F9 | bars,lineargradient,90°,#FF006A,100%,#6C0980,20%)
+            'chf'  => 'bg,s,F5F7F9|b0,lg,90,FF006A,1,6C0980,0.2',
+            // axis label styles
+            'chxs' => '0,576675,11|1,576675,11',
+            // chart margin (left, right, top, bottom)
+            'chma' => '20,20,50,10'
         );
 
         $this->_allSeries = $this->getRowsData($this->_dataRows);
@@ -252,7 +257,8 @@ class Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Graph extends Mage_Adminhtm
         $params['chs'] = $this->getWidth().'x'.$this->getHeight();
 
         if (isset($deltaX) && isset($deltaY)) {
-            $params['chg'] = $deltaX . ',' . $deltaY . ',1,0';
+            /* $params['chg'] = $deltaX . ',' . $deltaY . ',1,0'; */
+            $params['chg'] = $deltaX . ',' . $deltaY . ',1,0,191B3426'; // grid lines color (#191B3426)
         }
 
         // return the encoded data

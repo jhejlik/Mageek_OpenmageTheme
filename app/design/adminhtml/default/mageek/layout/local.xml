@@ -13,6 +13,11 @@
 <layout version="0.1.0">
 	<default>
 		<reference name="head">
+			<action method="removeItem"><type>skin_css</type><name>iestyles.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>below_ie7.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>ie7.css</name></action>
+			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name></action>
+			<action method="removeItem"><type>js</type><name>varien/iehover-fix.js</name></action>
 			<action method="removeItem"><type>skin_css</type><name>menu.css</name></action>
 			<action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=fallback</href></action>
 			<action method="addItem"><type>skin_css</type><name>menu.css</name></action>
