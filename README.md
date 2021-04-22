@@ -8,18 +8,18 @@ This theme contains CSS variables that are compatible with [all modern browsers]
 ## Change Log
 
 **2.0.0 -Apr 20, 2021**
-  - Colouring based on the Openmage brand identity
-  - Major CSS changes
-  - CSS edit from Admin
-  - New graph style on dashboard
+-   Colouring based on the Openmage brand identity
+-   Major CSS changes
+-   CSS edit from Admin
+-   New graph style on dashboard
 
 **1.0.1 -Jun 27, 2020**
-  - Theme switch refactoring
-  - Minor CSS changes
+-   Theme switch refactoring
+-   Minor CSS changes
 
 **1.0.0 -Jun 20, 2020**
-  - Initial release
-  - Admin theme switch inspired by [Inchoo AdminTheme](https://github.com/ajzele/Inchoo_AdminTheme).
+-   Initial release
+-   Admin theme switch inspired by [Inchoo AdminTheme](https://github.com/ajzele/Inchoo_AdminTheme).
 
 ## Screenshots
 
