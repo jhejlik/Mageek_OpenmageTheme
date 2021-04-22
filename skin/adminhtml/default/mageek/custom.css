@@ -11,100 +11,100 @@
 /* Amasty SMTP Email Settings */
 
 #amsmtp_smtp_provider {
-	width: 200px !important;
+  width: 200px !important;
 }
 
 #row_amsmtp_smtp_autofill button {
-	margin-top: -53px !important;
+  margin-top: -53px !important;
 }
 
 /* Amasty Product Grid */
 
 .grid table#productGrid_table td img {
-	display: block;
-	margin: -3px -3px -1px;
-	width: 40px;
-	height: auto;
-	box-shadow: 0 0 0 1px var(--color-basic-500);
-	border-radius: 4px;
-	transition: 100ms;
+  display: block;
+  margin: -3px -3px -1px;
+  width: 40px;
+  height: auto;
+  box-shadow: 0 0 0 1px var(--color-basic-500);
+  border-radius: 4px;
+  transition: 100ms;
 }
 
 .grid table#productGrid_table td img:hover {
-	transform: scale(2,2);
-	box-shadow: 0 0 0 .5px var(--color-basic-500), 0 2px 5px var(--color-basic-500);
+  transform: scale(2,2);
+  box-shadow: 0 0 0 .5px var(--color-basic-500), 0 2px 5px var(--color-basic-500);
 }
 
 .ampgrid_input_text {
-	width: calc(100% - 5px) !important;
-	background: var(--color-success-100) !important;
-	border: 1px solid var(--color-success-500) !important;
-	padding: 3px 2px !important;
-	font-family: 'Roboto', sans-serif !important;
-	font-size: inherit !important;
+  width: calc(100% - 5px) !important;
+  background: var(--color-success-100) !important;
+  border: 1px solid var(--color-success-500) !important;
+  padding: 3px 2px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: inherit !important;
 }
 
 .ampgrid-main-col input[type="checkbox"] {
-	width: 16px;
-	margin: 0 2px;
+  width: 16px;
+  margin: 0 2px;
 }
 
 #ampgrid_edit_note {
-	display: none !important;
+  display: none !important;
 }
 
 .ampgrid-group-switcher {
-	margin-bottom: 10px;
-	border: 1px solid var(--color-warning-300) !important;
-	background: var(--color-warning-100) !important;
-	border-radius: 6px;
-	padding: 10px 18px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-warning-300) !important;
+  background: var(--color-warning-100) !important;
+  border-radius: 6px;
+  padding: 10px 18px;
 }
 
 div.ampgrid-side-col {
-	margin: 12px 0 0 5px;
-	padding-bottom: 25px;
+  margin: 12px 0 0 5px;
+  padding-bottom: 25px;
 }
 
 .ampgrid-content-header {
-	margin: 12px 0 0 !important;
-	border-bottom: none !important;
-	padding-bottom: none !important;
+  margin: 12px 0 0 !important;
+  border-bottom: none !important;
+  padding-bottom: none !important;
 }
 
 .chosen-container .chosen-drop {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 .chosen-container-single .chosen-single {
-	border-radius: 0;
-	background: var(--color-success-100) !important;
-	box-shadow: none;
+  border-radius: 0;
+  background: var(--color-success-100) !important;
+  box-shadow: none;
 }
 
 .chosen-container-single .chosen-drop {
-	border-radius: 0;
+  border-radius: 0;
 }
 
 .chosen-container-active .chosen-single {
-	border: 1px solid var(--color-success-500);
-	box-shadow: none;
+  border: 1px solid var(--color-success-500);
+  box-shadow: none;
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
-	border: 1px solid var(--color-success-500);
-	box-shadow: none;
+  border: 1px solid var(--color-success-500);
+  box-shadow: none;
 }
 
 .chosen-container .chosen-drop {
-	border: 1px solid var(--color-success-500);
-	border-top: 0;
-	box-shadow: none;
+  border: 1px solid var(--color-success-500);
+  border-top: 0;
+  box-shadow: none;
 }
 
 .chosen-container .chosen-results li.highlighted {
-	background: var(--color-basic-700);
-	color: var(--color-success-100);
+  background: var(--color-basic-700);
+  color: var(--color-success-100);
 }
 
 /* Mirasvit Advanced Product Feeds */
@@ -121,24 +121,24 @@ div.ampgrid-side-col {
 }
 
 .feedexport.feed-generator-loader {
-	top: 30% !important;
-	backdrop-filter: blur(3px) !important;
-	box-shadow: 0 10px 50px -20px var(--color-basic-700) !important;
-	border-radius: 8px !important;
-	border: 1px solid var(--color-basic-100) !important;
-	color: var(--color-basic-900) !important;
-	padding: 80px 16px 32px !important;
-	background: var(--color-basic-transparent-150) url("images/preloader_big.svg") no-repeat center 20px !important;
+  top: 30% !important;
+  backdrop-filter: blur(3px) !important;
+  box-shadow: 0 10px 50px -20px var(--color-basic-700) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--color-basic-100) !important;
+  color: var(--color-basic-900) !important;
+  padding: 80px 16px 32px !important;
+  background: var(--color-basic-transparent-150) url("images/preloader_big.svg") no-repeat center 20px !important;
 }
 
 .feedexport.feed-generator-loader > img,
 .feedexport.feed-generator-loader > br {
-	display: none;
+  display: none;
 }
 
 .adminhtml-feedexport-feed-index .state-message {
-	background: transparent !important;
-	border: none !important;
+  background: transparent !important;
+  border: none !important;
 }
 
 .mfe-attribute-conditions select {
@@ -173,36 +173,36 @@ div.ampgrid-side-col {
 /* Mirasvit Fast Asynchronous Reindex */
 
 .asyncindex .log-container {
-	text-align: right !important;
+  text-align: right !important;
 }
 
 .asyncindex .log-container #detailed_log .indicator {
-	font-size: 20px !important;
-	top: 9px !important;
-	right: 5px !important;
-	letter-spacing: 15px;
+  font-size: 20px !important;
+  top: 9px !important;
+  right: 5px !important;
+  letter-spacing: 15px;
 }
 
 .asyncindex .log-container #is_developer {
-	position: initial !important;
-	margin-left: 1em !important;
+  position: initial !important;
+  margin-left: 1em !important;
 }
 
 .asyncindex .log-container #detailed_log {
-	margin-top: 20px !important;
-	border-color: #bbb !important;
-	border-width: 0 1px 1px 0 !important;
-	text-align: left !important;
-	height: 30px !important;
+  margin-top: 20px !important;
+  border-color: #bbb !important;
+  border-width: 0 1px 1px 0 !important;
+  text-align: left !important;
+  height: 30px !important;
 }
 
 .asyncindex .log-container #detailed_log .status {
-	padding: 5px 15px !important;
+  padding: 5px 15px !important;
 }
 
 .asyncindex .log-container #detailed_log.visible-true {
-	height: 400px  !important;
-	padding: 45px 1px !important;
+  height: 400px  !important;
+  padding: 45px 1px !important;
 }
 
 .asyncindex .log-container #detailed_log .grid {
@@ -220,37 +220,37 @@ div.ampgrid-side-col {
 /* Mirasvit Advanced Reports */
 
 .form-buttons .advd-dashboard-switcher {
-	display: inline !important;
-	margin-left: 20px !important;
+  display: inline !important;
+  margin-left: 20px !important;
 }
 
 .gridster {
-	padding: 15px 10px !important;
-	margin-top: 20px !important;
+  padding: 15px 10px !important;
+  margin-top: 20px !important;
 }
 
 .gridster .gridster-lock {
-	top: -3px !important;
+  top: -3px !important;
 }
 
 .advr-report-block-container .advr-widget-toolbar .datecontrol .primary .interval {
-	width: 250px !important;
+  width: 250px !important;
 }
 
 .advr-report-block-container .advr-widget-toolbar .custom.custom-sales_source .mstcore-help-button {
-	margin-left: 190px !important;
-	margin-top: -24px !important;
+  margin-left: 190px !important;
+  margin-top: -24px !important;
 }
 
 .advr-report-block-container #chart_div svg,
 .advr-report-block-container #chart_div > div > div {
-	max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 .advr-report-block-container #chart_div svg {
-	width: 100% !important;
+  width: 100% !important;
 }
 
 .advr-report-block-container .grid table td.nobr  {
-	min-width: 130px !important;
+  min-width: 130px !important;
 }
