@@ -8,6 +8,37 @@
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Extension hacks %%%%%%%%%%%%%%%%%%%%%%% */
 
+/* Plugincompany Magento Syntax Highlighter */
+
+.CodeMirror {
+  height: 200px;
+  width: 98.5% !important;
+  resize: vertical;
+  min-height: 200px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-basic-500);
+  padding: 2px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.CodeMirror pre {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid var(--color-basic-500);
+  background-color: var(--color-basic-300);
+  white-space: nowrap;
+}
+
+.CodeMirror-linenumber {
+  padding: 3px 3px 2px 5px;
+  color: var(--color-basic-500);
+}
+
 /* Amasty SMTP Email Settings */
 
 #amsmtp_smtp_provider {

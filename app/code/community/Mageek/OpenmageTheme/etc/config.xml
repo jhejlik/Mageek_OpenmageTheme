@@ -13,14 +13,15 @@
 <config>
     <modules>
         <Mageek_OpenmageTheme>
-            <version>2.0.0-alfa</version>
+            <version>2.0.0</version>
         </Mageek_OpenmageTheme>
     </modules>
     <global>
         <blocks>
             <adminhtml>
                 <rewrite>
-                    <dashboard_graph>Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Graph</dashboard_graph>
+                    <dashboard_tab_amounts>Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Tab_Amounts</dashboard_tab_amounts>
+                    <dashboard_tab_orders>Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Tab_Orders</dashboard_tab_orders>
                 </rewrite>
             </adminhtml>
         </blocks>

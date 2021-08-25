@@ -24,17 +24,20 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div>
-    <p class="switcher a-right" style="padding:5px 10px;"><?php echo $this->__('Select Range') ?>:
-    <select name="period" id="order_<?php echo $this->getHtmlId() ?>_period" onchange="changeDiagramsPeriod(this);">
-        <?php foreach ($this->helper('adminhtml/dashboard_data')->getDatePeriods() as $_value=>$_label): ?>
-            <?php if(in_array($_value, array('custom'))) continue; ?>
-            <option value="<?php echo $_value ?>" <?php if($this->getRequest()->getParam('period')==$_value): ?> selected="selected"<?php endif; ?>><?php echo $_label ?></option>
-        <?php endforeach; ?>
-    </select></p>
-    <?php if($this->getCount()): ?>
-    <p><img src="<?php echo $this->getChartUrl(true) ?>" alt="chart" title="chart" /></p>
-    <?php else: ?>
-    <p class="a-center" style="padding: 150px 10px"><?php echo $this->__('No Data Found') ?></p>
-    <?php endif; ?>
-</div>
+<?php
+/**
+ * @see Mage_Adminhtml_Page_Block_Notices
+ */
+?>
+<?php if ($this->displayNoscriptNotice()): ?>
+    <noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong><?php echo $this->__('JavaScript seems to be disabled in your browser.'); ?></strong> <?php echo $this->__('You must have JavaScript enabled in your browser to utilize the functionality of this website.'); ?></p>
+            </div>
+        </div>
+    </noscript>
+<?php endif; ?>
+<?php if ($this->displayDemoNotice()): ?>
+    <p class="demo-notice"><?php echo $this->__('This is a demo store. Any orders placed through this store will not be honored or fulfilled.') ?></p>
+<?php endif; ?>

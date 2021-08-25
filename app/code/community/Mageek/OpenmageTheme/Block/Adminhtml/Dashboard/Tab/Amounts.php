@@ -1,30 +1,84 @@
 <?php
-
 /**
- * @category    Mageek
- * @package     Mageek_OpenmageTheme
- * @author      Jindra Hejlík <jindra@hejlik.cz>
- * @copyright   Copyright (c) Mageek (http://hejlik.cz/)
- * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Mage
+ * @package     Mage_Adminhtml
+ * @copyright  Copyright (c) 2006-2020 Magento, Inc. (http://www.magento.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Graph extends Mage_Adminhtml_Block_Dashboard_Graph
+/**
+ * Adminhtml dashboard order amounts diagram
+ *
+ * @category   Mage
+ * @package    Mage_Adminhtml
+ * @author     Magento Core Team <core@magentocommerce.com>
+ */
+
+class Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Tab_Amounts extends Mage_Adminhtml_Block_Dashboard_Tab_Amounts
 {
+    /**
+     * Initialize object
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->setHtmlId('amounts');
+        parent::__construct();
+    }
+
     /**
      * Chart width
      *
      * @var string
      */
-    // Set the width to 722px
-    protected $_width = '722';
+    protected $_width = '722'; // set chart width to 722px
 
     /**
      * Chart height
      *
      * @var string
      */
-    // Set the height to 722px
-    protected $_height = '400';
+    protected $_height = '400'; // set chart height to 400px
+
+    /**
+     * Prepare chart data
+     *
+     * @return void
+     */
+    protected function _prepareData()
+    {
+        $this->setDataHelperName('adminhtml/dashboard_order');
+        $this->getDataHelper()->setParam('store', $this->getRequest()->getParam('store'));
+        $this->getDataHelper()->setParam('website', $this->getRequest()->getParam('website'));
+        $this->getDataHelper()->setParam('group', $this->getRequest()->getParam('group'));
+
+        $this->setDataRows('revenue');
+        $this->_axisMaps = array(
+            'x' => 'range',
+            'y' => 'revenue'
+        );
+
+        parent::_prepareData();
+    }
 
     /**
      * Get chart url

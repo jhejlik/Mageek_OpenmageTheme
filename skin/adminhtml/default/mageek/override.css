@@ -252,10 +252,16 @@ div.main-col {
   border-color: var(--color-basic-100);
   position: relative;
   z-index: 1;
+  border-width: 0 0 1px;
+  margin-bottom: 0;
 }
 
 .header + .notification-global {
   margin-top: 40px;
+}
+
+.demo-notice + .header + .notification-global {
+  margin-top: 72px;
 }
 
 .notification-global .label,
@@ -268,14 +274,34 @@ div.main-col {
   margin-top: 0;
 }
 
-.demo-notice {
+.noscript {
   position: fixed;
-  background: var(--color-primary-500);
-  bottom: 0;
-  left: calc(50% - 25vw);
-  width: 50vw;
-  z-index: -1;
-  padding: 5px 0;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 2;
+  background: var(--color-warning-100);
+  border-color: var(--color-basic-100);
+  margin: 0;
+  padding: 0;
+}
+
+.noscript .noscript-inner {
+  width: initial;
+  margin: 5px auto;
+  background: none;
+}
+
+.demo-notice {
+  position: absolute;
+  background: var(--color-primary-500) url("images/msg_demo.svg") 27px 8px no-repeat;
+  top: 40px;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  padding: 9px 27px 9px 54px;
+  text-align: left;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Menu %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -339,7 +365,7 @@ div.main-col {
 #nav > li > ul:after,
 #usermenu ul:after,
 div.autocomplete ul:after {
-  border-color: transparent transparent var(--color-basic-100) transparent;
+  border-color: transparent transparent var(--color-basic-500) transparent;
   content: " ";
   position: absolute;
   border-style: solid;
@@ -347,7 +373,7 @@ div.autocomplete ul:after {
   height: 0;
   width: 0;
   top: -20px;
-  left: 30px;
+  left: 20px;
 }
 
 #nav li.active {
@@ -1597,7 +1623,9 @@ fieldset.np {
   margin: 15px 0;
 }
 
-
+.nm + div > .grid {
+  margin-top: 10px;
+}
 
 .data.order-tables td br {
   display: none;
