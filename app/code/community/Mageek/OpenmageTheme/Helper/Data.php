@@ -13,11 +13,14 @@ class Mageek_OpenmageTheme_Helper_Data extends Mage_Core_Helper_Data
 
     public function setAdminTheme()
     {
-
         if (Mage::getStoreConfigFlag('admin/mageek_openmagetheme/mageektheme_enable')) {
             $theme = "mageek";
         } else {
-            $theme = "default";
+        	if (Mage::getStoreConfigFlag('admin/design/use_legacy_theme') == 0) {
+        		$theme = "openmage";
+        	} else {
+        		$theme = "default";
+        	}
         }
 
         return $theme;

@@ -13,10 +13,18 @@
 <config>
     <modules>
         <Mageek_OpenmageTheme>
-            <version>1.0.1</version>
+            <version>2.0.0</version>
         </Mageek_OpenmageTheme>
     </modules>
     <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <dashboard_tab_amounts>Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Tab_Amounts</dashboard_tab_amounts>
+                    <dashboard_tab_orders>Mageek_OpenmageTheme_Block_Adminhtml_Dashboard_Tab_Orders</dashboard_tab_orders>
+                </rewrite>
+            </adminhtml>
+        </blocks>
         <models>
             <mageek_openmagetheme>
                 <class>Mageek_OpenmageTheme_Model</class>
@@ -43,7 +51,7 @@
         <admin>
             <mageek_openmagetheme>
                 <mageektheme_enable>1</mageektheme_enable>
-                <!-- <mageektheme_bglogin>1</mageektheme_bglogin> -->
+                <mageektheme_customcss><![CDATA[.yourstyle { display: visible; }]]></mageektheme_customcss>
             </mageek_openmagetheme>
         </admin>
     </default>
