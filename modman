@@ -1,0 +1,4 @@
+app/code/community/Mageek/OpenmageTheme       app/code/community/Mageek/OpenmageTheme
+app/design/adminhtml/default/mageek           app/design/adminhtml/default/mageek
+app/etc/modules/Mageek_OpenmageTheme.xml      app/etc/modules/Mageek_OpenmageTheme.xml
+skin/adminhtml/default/mageek                 skin/adminhtml/default/mageek
